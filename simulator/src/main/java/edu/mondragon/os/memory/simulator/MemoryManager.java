@@ -109,12 +109,10 @@ public class MemoryManager {
     public synchronized void sleep(Program program)
             throws MemoryException, MemoryManagerException {
 
-
     }
 
     public synchronized void awake(Program program)
             throws MemoryException, MemoryManagerException {
-
 
     }
 
@@ -126,8 +124,7 @@ public class MemoryManager {
 
         if (programBlock == null) {
 
-            throw new MemoryManagerException(
-                    program.getName() + " has no allocated memory");
+            throw new MemoryManagerException(program.getName() + " has no allocated memory");
         }
 
         // Liberamos realmente la memoria
